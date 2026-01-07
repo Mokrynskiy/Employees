@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/Employees.WPF/Employees.WPF.csproj" />
+  </Folder>
+  <Project Path="Employees.Domain/Employees.Domain.csproj" />
+  <Project Path="Employees.Infrastructure/Employees.Infrastructure.csproj" />
+</Solution>
