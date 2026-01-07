@@ -8,6 +8,9 @@ using Employees.Domain.WorkHistories;
 
 namespace Employees.Domain.Employees;
 
+/// <summary>
+/// Сотрудник
+/// </summary>
 public class Employee
 {
     /// <summary>
@@ -18,12 +21,12 @@ public class Employee
     /// <summary>
     /// Фамилия
     /// </summary>
-    public string LastName { get; private set; }
+    public string LastName { get; private set; } = default!;
 
     /// <summary>
     /// Имя
     /// </summary>
-    public string FirstName { get; private set; }
+    public string FirstName { get; private set; } = default!;
 
     /// <summary>
     /// Отчество
@@ -43,27 +46,27 @@ public class Employee
     /// <summary>
     /// Место рождения
     /// </summary>
-    public string PlaceOfBirth { get; private set; }
+    public string PlaceOfBirth { get; private set; } = default!;
 
     /// <summary>
     /// Адрес проживания
     /// </summary>
-    public string Address { get; private set; }
+    public string Address { get; private set; } = default!;
 
     /// <summary>
     /// Телефон
     /// </summary>
-    public string Phone { get; private set; }
+    public string Phone { get; private set; } = default!;
 
     /// <summary>
     /// Серия паспорта
     /// </summary>
-    public string PassportSeries { get; private set; }
+    public string PassportSeries { get; private set; } = default!;
 
     /// <summary>
     /// Номер паспорта
     /// </summary>
-    public string PassportNumber { get; private set; }
+    public string PassportNumber { get; private set; } = default!;
 
     /// <summary>
     /// Дата выдачи паспорта
@@ -73,7 +76,7 @@ public class Employee
     /// <summary>
     /// Кто выдал паспорт
     /// </summary>
-    public string WhoIssuedPassport { get; private set; }
+    public string WhoIssuedPassport { get; private set; } = default!;
 
     /// <summary>
     /// Дата начала трудовой деятельности

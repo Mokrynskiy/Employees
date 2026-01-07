@@ -1,5 +1,8 @@
 ﻿namespace Employees.Domain.Genders;
 
+/// <summary>
+/// Пол
+/// </summary>
 public enum Gender
 {
     /// <summary>
