@@ -27,12 +27,6 @@ public interface IRepository<T> where T : class
     T Add(T item);
 
     /// <summary>
-    /// Добавить элементы
-    /// </summary>
-    /// <param name="items"></param>
-    void AddRange(IEnumerable<T> items);
-
-    /// <summary>
     /// Обновить элемент
     /// </summary>
     /// <param name="item"></param>
@@ -43,12 +37,6 @@ public interface IRepository<T> where T : class
     /// </summary>
     /// <param name="item"></param>
     void Delete(T item);
-
-    /// <summary>
-    /// Удалить элементы
-    /// </summary>
-    /// <param name="expression"></param>
-    void Delete(Expression<Func<T, bool>> expression);
-
+       
     void Save();
 }
