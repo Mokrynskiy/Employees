@@ -1,9 +1,11 @@
 ﻿using Employees.Domain.AcademicDegrees;
 using Employees.Domain.AcademicTitles;
 using Employees.Domain.Careers;
+using Employees.Domain.Departments;
 using Employees.Domain.EducationTypes;
 using Employees.Domain.Genders;
 using Employees.Domain.Penalizings;
+using Employees.Domain.Positions;
 using Employees.Domain.Rewarings;
 using Employees.Domain.WorkHistories;
 
@@ -157,4 +159,85 @@ public class Employee
     /// </summary>
     public IReadOnlyCollection<WorkHistory> WorkHistory => workHistory.AsReadOnly();
 
+    /// <summary>
+    /// Создать нового сотрудника
+    /// </summary>
+    /// <param name="lastName"> Фамилия</param>
+    /// <param name="firstName">Имя</param>
+    /// <param name="patronymic">Отчество</param>
+    /// <param name="gender">Пол</param>
+    /// <param name="dateOfBirth">Дата рождения</param>
+    /// <param name="placeOfBirth">Место рождения</param>
+    /// <param name="address">Адрес проживания</param>
+    /// <param name="phone">Телефон</param>
+    /// <param name="passportSeries">Серия паспорта</param>
+    /// <param name="passportNumber">Номер паспорта</param>
+    /// <param name="passportDate">Дата выдачи паспорта</param>
+    /// <param name="whoIssuedPassport">Кто выдал паспорт</param>
+    /// <param name="StartDateOfWork">Дата начала трудовой деятельности</param>
+    /// <param name="educationType">Тип образования</param>
+    /// <param name="EducationDocumentName">Наименование документа об образовании</param>
+    /// <param name="educationDocumentDate">Дата документа об образовании</param>
+    /// <param name="educationDocumentNumber">Номер документа об образовании</param>
+    /// <param name="institutionName">Наименование учебного заведения</param>
+    /// <param name="specialization">Специальность</param>
+    /// <param name="photoPath">Путь к фотографии</param>
+    /// <param name="academicDegree">Ученая степень</param>
+    /// <param name="academicTitle">Ученое звание</param>
+    /// <param name="orderDate">Дата приказа о принятии на работу</param>
+    /// <param name="orderNumber">Номер приказа о принятии на работу</param>
+    /// <returns>Employee</returns>
+    public static Employee Create(
+        string lastName,
+        string firstName,
+        string patronymic,
+        Gender gender,
+        DateTime dateOfBirth,
+        string placeOfBirth,
+        string address,
+        string phone,
+        string passportSeries,
+        string passportNumber,
+        DateTime passportDate,
+        string whoIssuedPassport,
+        DateTime StartDateOfWork,
+        EducationType educationType,
+        string EducationDocumentName,
+        DateTime? educationDocumentDate,
+        string educationDocumentNumber,
+        string institutionName,
+        string specialization,
+        string photoPath,
+        AcademicDegree academicDegree,
+        AcademicTitle academicTitle,
+        string orderNumber,
+        DateTime orderDate        
+        )
+    {
+        return new Employee
+        {
+            LastName = lastName,
+            FirstName = firstName,
+            Patronymic = patronymic,
+            Gender = gender,
+            DateOfBirth = dateOfBirth,
+            PlaceOfBirth = placeOfBirth,
+            Address = address,
+            Phone = phone,
+            PassportSeries = passportSeries,
+            PassportNumber = passportNumber,
+            PassportDate = passportDate,
+            WhoIssuedPassport = whoIssuedPassport,
+            StartDateOfWork = StartDateOfWork,
+            EducationType = educationType,
+            EducationDocumentName = EducationDocumentName,
+            EducationDocumentDate = educationDocumentDate,
+            EducutionDocumentNumber = educationDocumentNumber,
+            InstitutionName = institutionName,
+            Specialization = specialization,
+            PhotoPath = photoPath,
+            AcademicDegree = academicDegree,
+            AcademicTitle = academicTitle
+        };
+    }   
 }
