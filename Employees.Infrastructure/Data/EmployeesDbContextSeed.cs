@@ -1,6 +1,4 @@
-﻿using Employees.Domain.Departments;
-
-namespace Employees.Infrastructure.Data;
+﻿namespace Employees.Infrastructure.Data;
 
 public class EmployeesDbContextSeed
 {

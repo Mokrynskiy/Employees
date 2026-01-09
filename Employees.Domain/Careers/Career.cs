@@ -21,7 +21,7 @@ public class Career
     /// <summary>
     /// Дата приказа
     /// </summary>
-    public DateOnly OrderDate { get; private set; }
+    public DateTime OrderDate { get; private set; }
 
     /// <summary>
     /// Номер приказа

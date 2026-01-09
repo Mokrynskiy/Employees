@@ -33,12 +33,12 @@ public class WorkHistory
     /// <summary>
     /// Дата начала работы
     /// </summary>
-    public DateOnly StartDate { get; private set; }
+    public DateTime StartDate { get; private set; }
 
     /// <summary>
     /// Дата увольнения
     /// </summary>
-    public DateOnly EndDate { get; private set; }
+    public DateTime EndDate { get; private set; }
 
     /// <summary>
     /// Причина увольнения

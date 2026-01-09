@@ -41,7 +41,7 @@ public class Employee
     /// <summary>
     /// Дата рождения
     /// </summary>
-    public DateOnly DateOfBirth { get; private set; }
+    public DateTime DateOfBirth { get; private set; }
 
     /// <summary>
     /// Место рождения
@@ -71,7 +71,7 @@ public class Employee
     /// <summary>
     /// Дата выдачи паспорта
     /// </summary>
-    public DateOnly PassportDate { get; private set; }
+    public DateTime PassportDate { get; private set; }
 
     /// <summary>
     /// Кто выдал паспорт
@@ -81,7 +81,7 @@ public class Employee
     /// <summary>
     /// Дата начала трудовой деятельности
     /// </summary>
-    public DateOnly StartDateOfWork { get; private set; }
+    public DateTime StartDateOfWork { get; private set; }
 
     /// <summary>
     /// Ученая степень

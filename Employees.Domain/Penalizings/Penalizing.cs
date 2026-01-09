@@ -18,7 +18,7 @@ public class Penalizing
     /// <summary>
     /// Дата приказа о взыскании
     /// </summary>
-    public DateOnly OrderDate { get; private set; }
+    public DateTime OrderDate { get; private set; }
 
     /// <summary>
     /// Номер приказа о взыскании

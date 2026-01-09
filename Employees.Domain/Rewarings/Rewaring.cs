@@ -18,7 +18,7 @@ public class Rewaring
     /// <summary>
     /// Дата приказа о поощерении
     /// </summary>
-    public DateOnly OrderDate { get; private set; }
+    public DateTime OrderDate { get; private set; }
 
     /// <summary>
     /// Номер приказа о поощерении
