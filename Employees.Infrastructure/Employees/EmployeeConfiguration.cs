@@ -1,5 +1,6 @@
 ﻿using Employees.Domain.AcademicDegrees;
 using Employees.Domain.AcademicTitles;
+using Employees.Domain.EducationTypes;
 using Employees.Domain.Employees;
 using Employees.Domain.Genders;
 using Microsoft.EntityFrameworkCore;
@@ -69,7 +70,25 @@ public class EmployeeConfiguration : IEntityTypeConfiguration<Employee>
         builder.Property(x => x.AcademicTitle)
             .HasConversion(new EnumToNumberConverter<AcademicTitle, byte>());
 
-        builder.OwnsMany(x => x.Rewarings, r =>
+        builder.Property(x => x.EducationType)
+            .HasConversion(new EnumToNumberConverter<EducationType, byte>());
+
+        builder.Property(x => x.EducationDocumentName)
+            .HasMaxLength(50);
+
+        builder.Property(x => x.EducutionDocumentNumber)
+            .HasMaxLength(50);
+
+        builder.Property(x => x.InstitutionName)
+            .HasMaxLength(250);
+
+        builder.Property(x => x.Specialization)
+            .HasMaxLength(150);
+
+        builder.Property(x => x.PhotoPath)
+            .HasMaxLength(150);
+
+    builder.OwnsMany(x => x.Rewarings, r =>
         {
             r.WithOwner().HasForeignKey("employee_id");
 

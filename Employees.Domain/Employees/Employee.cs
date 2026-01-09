@@ -1,6 +1,7 @@
 ﻿using Employees.Domain.AcademicDegrees;
 using Employees.Domain.AcademicTitles;
 using Employees.Domain.Careers;
+using Employees.Domain.EducationTypes;
 using Employees.Domain.Genders;
 using Employees.Domain.Penalizings;
 using Employees.Domain.Rewarings;
@@ -82,6 +83,41 @@ public class Employee
     /// Дата начала трудовой деятельности
     /// </summary>
     public DateTime StartDateOfWork { get; private set; }
+
+    /// <summary>
+    /// Тип образования
+    /// </summary>
+    public EducationType EducationType { get; private set; }
+
+    /// <summary>
+    /// Наименование документа об образовании
+    /// </summary>
+    public string EducationDocumentName { get; private set; } = default!;
+
+    /// <summary>
+    /// Дата документа об образование
+    /// </summary>
+    public DateTime? EducationDocumentDate { get; private set; }
+
+    /// <summary>
+    /// Номер документа об образовании
+    /// </summary>
+    public string EducutionDocumentNumber { get; private set; } = default!;
+
+    /// <summary>
+    /// Наименование учебного заведения
+    /// </summary>
+    public string InstitutionName { get; private set; } = default!;
+
+    /// <summary>
+    /// Специальность
+    /// </summary>
+    public string Specialization { get; private set; } = default!;
+
+    /// <summary>
+    /// Путь к файлу фотографии
+    /// </summary>
+    public string PhotoPath { get; private set; } = default!;
 
     /// <summary>
     /// Ученая степень
